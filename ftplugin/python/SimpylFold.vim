@@ -214,8 +214,8 @@ function! SimpylFoldText()
     return ''
 endfunction
 
-setlocal foldexpr=SimpylFold(v:lnum)
-setlocal foldmethod=expr
+" setlocal foldexpr=SimpylFold(v:lnum)
+" setlocal foldmethod=expr
 
 if exists('SimpylFold_docstring_preview') && SimpylFold_docstring_preview
     setlocal foldtext=foldtext()\ .\ SimpylFoldText()
